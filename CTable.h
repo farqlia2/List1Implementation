@@ -3,7 +3,7 @@
 #include <string>
 #include <iostream>
 
-const std::string NAME = "name";
+const std::string NAME = "default";
 const std::string SUFFIX = "_copy";
 const int LENGTH = 10;
 
@@ -22,5 +22,5 @@ private:
 	std::string name;
 	int* array;
 	int  length;
-	void printName(std::string message);
+	void printName(std::string& message);
 };

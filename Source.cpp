@@ -66,15 +66,33 @@ int main() {
 	// Default constructors are called without parenthesis!!
 	CTable cTable1;
 
-	//if (DEBUG) cTable1.printDebugInfo();
+	if (DEBUG) cTable1.printDebugInfo();
 
-	//CTable cTable2("Box", 10);
+	CTable cTable2("random_table", 10);
 
-	//if (DEBUG) cTable2.printDebugInfo();
+	if (DEBUG) cTable2.printDebugInfo();
 
-	//CTable cTable3(cTable2);
+	CTable cTable3(cTable2);
 
-	//if (DEBUG) cTable3.printDebugInfo();
+	if (DEBUG) cTable3.printDebugInfo();
+
+    CTable * dynamicTable = new CTable("Pippi", 30);
+
+    if (DEBUG) {
+        std::cout << "Dynamic CTable\n";
+        dynamicTable->printDebugInfo();
+    }
+
+    CTable* clonedTable = dynamicTable->clone();
+
+    if (DEBUG) {
+        std::cout << "Cloned Dynamic CTable\n";
+        clonedTable->printDebugInfo();
+    }
+
+    delete dynamicTable;
+    delete clonedTable;
+
 }
 
 bool isArraySizeValid(int size) {
