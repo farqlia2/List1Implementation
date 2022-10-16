@@ -4,6 +4,7 @@
 #define DEBUG true
 #include "Constants.h"
 #include "CTable.h"
+#include "Utils.h"
 
 /*
 If (DEBUG) => jakies cout i dalej
@@ -12,8 +13,6 @@ If (DEBUG) => jakies cout i dalej
 // --- EXERCISE 1 ---
 
 void fillArray(int* array, int size, int fillValue);
-
-void printArray(int* array, int size);
 
 // single pointer would populate an array, but would not change
 // the place to which the passed pointer points to - it is because
@@ -64,19 +63,23 @@ int main() {
 	// Vector<CTable>
 	
 	// Default constructors are called without parenthesis!!
-	CTable cTable1;
+	CTable cTableDefault;
 
-	if (DEBUG) cTable1.printDebugInfo();
+	if (DEBUG) cTableDefault.printDebugInfo();
 
-	CTable cTable2("random_table", 10);
+	CTable cTableParam(CTABLE_NAME, CTABLE_LENGTH);
 
-	if (DEBUG) cTable2.printDebugInfo();
+	if (DEBUG) cTableParam.printDebugInfo();
 
-	CTable cTable3(cTable2);
+	CTable cTableCopy(cTableParam);
 
-	if (DEBUG) cTable3.printDebugInfo();
+	if (DEBUG) cTableCopy.printDebugInfo();
 
-    CTable * dynamicTable = new CTable("Pippi", 30);
+
+
+    /*
+
+    CTable * dynamicTable = new CTable("Pippi", CTABLE_LENGTH);
 
     if (DEBUG) {
         std::cout << "Dynamic CTable\n";
@@ -91,7 +94,7 @@ int main() {
     }
 
     delete dynamicTable;
-    delete clonedTable;
+    delete clonedTable;*/
 
 }
 
@@ -113,19 +116,11 @@ bool allocateArray(int** array, int size) {
 	return isSizeValid;
 }
 
-void printArray(int* array, int size) {
-
-	for (int i = 0; i < size; i++) {
-		std::cout << "array[" << i << "] = " << array[i] << "\n";
-	}
-	std::cout << "\n";
-}
-
 void allocateArrayFill(int size, int fillValue){
 	int* array = NULL;
 	if (allocateArray(&array, size)) {
 		fillArray(array, size, fillValue);
-		printArray(array, size);
+		Utils::printIntArray(array, size);
 		delete[] array;
 	}
 }
@@ -151,7 +146,7 @@ bool allocate2DimArray(int*** array2Dim, int rows, int cols) {
 void print2DimArray(int** array2Dim, int rows, int cols) {
 
 	for (int i = 0; i < rows; i++) {
-		printArray(array2Dim[i], cols);
+        Utils::printIntArray(array2Dim[i], cols);
 		std::cout << "\n";
 	}
 

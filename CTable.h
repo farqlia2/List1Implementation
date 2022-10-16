@@ -16,11 +16,10 @@ public:
 	void setName(std::string name);
 	bool setNewLength(int newLength);
 	CTable* clone();
-
 	void printDebugInfo();
 private:
 	std::string name;
 	int* array;
 	int  length;
-	void printName(std::string& message);
+	void printName(std::string message);
 };

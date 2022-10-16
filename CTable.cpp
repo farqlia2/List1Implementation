@@ -4,14 +4,14 @@ CTable::CTable(std::string name, int tableLength) {
 	this->name = name;
 	this->length = tableLength;
 	this->array = new int[tableLength];
-	printName((std::string &)"parametric");
+	printName("parametric");
 }
 
 CTable::CTable() {
 	this->name = NAME;
 	this->length = LENGTH;
 	this->array = new int[LENGTH];
-	printName((std::string &)"non-parametric");
+	printName("non-parametric");
 }
 
 CTable::CTable(CTable& other) {
@@ -19,7 +19,7 @@ CTable::CTable(CTable& other) {
 	this->length = other.length;
 	this->array = new int[other.length];
 	Utils::copyIntArray(array, other.array, length);
-	printName((std::string &)"copy");
+	printName("copy");
 }
 void CTable::setName(std::string name) {
 	this->name = name;
@@ -44,12 +44,12 @@ CTable::~CTable() {
 	printName((std::string &) "deleting");
 }
 
-void CTable::printName(std::string& message) {
+void CTable::printName(std::string message) {
 	std::cout << message << ": " << this->name << "\n";
 }
 
 void CTable::printDebugInfo() {
-	std::cout << "My name is" << name
+	std::cout << "My name is " << name
 		<< ", length = " << length << ", array = " << 
 		array << ", address = " << this << "\n";
 }
