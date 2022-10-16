@@ -7,11 +7,16 @@ const std::string NAME = "default";
 const std::string SUFFIX = "_copy";
 const int LENGTH = 10;
 
+const std::string DEFAULT_MESSAGE = "default";
+const std::string PARAMETRIC_MESSAGE = "parametric";
+const std::string COPY_MESSAGE = "copy";
+const std::string DELETE_MESSAGE = "deleting";
+
 class CTable {
 public:
 	CTable();
 	CTable(std::string name, int tableLength);
-	CTable(CTable& other);
+	CTable(const CTable& other);
 	~CTable();
 	void setName(std::string name);
 	bool setNewLength(int newLength);
@@ -21,5 +26,5 @@ private:
 	std::string name;
 	int* array;
 	int  length;
-	void printName(std::string message);
+	void printName(const std::string& message);
 };
