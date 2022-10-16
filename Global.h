@@ -1,0 +1,10 @@
+//
+// Created by Lenovo on 16.10.2022.
+//
+
+#ifndef LIST1IMPLEMENTATION_GLOBAL_H
+#define LIST1IMPLEMENTATION_GLOBAL_H
+
+#define DEBUG true
+
+#endif //LIST1IMPLEMENTATION_GLOBAL_H
