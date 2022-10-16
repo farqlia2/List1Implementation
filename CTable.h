@@ -1,6 +1,7 @@
 #pragma once
 #include <string>
 #include <iostream>
+#include "ArrayUtils.h"
 
 const std::string NAME = "default";
 const std::string SUFFIX = "_copy";

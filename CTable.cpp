@@ -18,7 +18,7 @@ CTable::CTable(const CTable& other) {
 	this->name = other.name + SUFFIX;
 	this->length = other.length;
 	this->array = new int[other.length];
-	Utils::copyIntArray(array, other.array, length);
+	ArrayUtils::copyIntArray(array, other.array, length);
 	printName(COPY_MESSAGE);
 }
 void CTable::setName(std::string name) {
@@ -29,7 +29,7 @@ bool CTable::setNewLength(int newLength) {
 	bool isSizeValid = newLength > 0;
 	if (isSizeValid) {
 		int* newArray = new int[newLength];
-		Utils::copyIntArray(newArray, this->array,
+		ArrayUtils::copyIntArray(newArray, this->array,
                             (newLength < length) ? newLength : length);
 		delete[] array;
 		this->array = newArray;
