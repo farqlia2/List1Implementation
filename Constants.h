@@ -3,13 +3,14 @@
 #include <string>
 #include <vector>
 
-constexpr int FILL_VALUE = 34;
-constexpr int ARRAY_SIZE = 10;
+const int FILL_VALUE = 34;
+const int ARRAY_SIZE = 10;
 
-constexpr int ROWS = 5;
-constexpr int COLS = 4;
+const int ROWS = 3;
+const int COLS = 5;
 
-constexpr int CTABLE_LENGTH = 15;
+const int CTABLE_LENGTH = 15;
+const int NEGATIVE_VALUE = -10;
 
 const std::string CTABLE_NAME = "my_ctable";
 const std::string DYNAMIC_CTABLE_NAME = "my_ctable_dynamic";

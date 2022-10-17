@@ -42,6 +42,8 @@ CTable* CTable::clone(){
 	return new CTable(*this);
 }
 
+// In our case destructor is useful for
+// deallocating dynamic memory
 CTable::~CTable() {
 	delete[] array;
 	printName(DELETE_MESSAGE);
