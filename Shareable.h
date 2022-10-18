@@ -1,0 +1,14 @@
+//
+// Created by Lenovo on 18.10.2022.
+//
+
+#ifndef LIST1IMPLEMENTATION_SHAREABLE_H
+#define LIST1IMPLEMENTATION_SHAREABLE_H
+
+
+class Shareable {
+
+};
+
+
+#endif //LIST1IMPLEMENTATION_SHAREABLE_H
