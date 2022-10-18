@@ -16,7 +16,7 @@ public:
     // the local copy of the pointer is created and it is assigned the
     // address of the allocated array, but after the function is finished,
     // it is popped from the stack - it actually leads to memory leak.
-    static bool allocateArray(int** array, int size);
+    static bool allocateArray(int*& array, int size);
 
     static void allocateArrayFill(int size, int fillValue);
 

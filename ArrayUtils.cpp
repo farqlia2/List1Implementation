@@ -28,17 +28,17 @@ void ArrayUtils::fillArray(int* array, int size, int fillValue) {
     }
 }
 
-bool ArrayUtils::allocateArray(int** array, int size) {
+bool ArrayUtils::allocateArray(int*& array, int size) {
     bool isSizeValid = isArraySizeValid(size);
     if (isSizeValid) {
-        (*array) = new int[size];
+        array = new int[size];
     }
     return isSizeValid;
 }
 
 void ArrayUtils::allocateArrayFill(int size, int fillValue){
     int* array = NULL;
-    if (allocateArray(&array, size)) {
+    if (allocateArray(array, size)) {
         fillArray(array, size, fillValue);
         ArrayUtils::printIntArray(array, size);
         delete[] array;

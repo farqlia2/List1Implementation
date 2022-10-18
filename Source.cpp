@@ -51,7 +51,6 @@ int main() {
     }
 	else if (EXERCISE == 3){
 
-
         std::cout << "Exercise 3 Solution: \n";
 
         CTable cTableDefault;
@@ -115,7 +114,7 @@ int main() {
         // Remember to make a constant reference because otherwise a
         // copy is created
         // However this is newer standard
-        //for (CTable& t : cTableStaticArray){
+        // for (CTable& t : cTableStaticArray){
         //    t.printDebugInfo();
         //}
 
@@ -134,19 +133,11 @@ int main() {
         if (DEBUG) std::cout << "Deallocate dynamic array: \n";
         delete [] cTableDynamicArray;
 
-
-    }
-
-    // int defaultSize = 10;
-
-    else {
-
-
-        /*
+        // An example with vector
         std::vector<CTable> cTableVector;
-        int length = 5;
-        int lengths[] = {1, 2, 3, 4, 5};
-        std::string names[] = {"T1", "T2", "T3", "T4", "T5"};
+        int length = 6;
+        int lengths[] = {1, 2, 3, 4, 5, 6};
+        std::string names[] = {"T1", "T2", "T3", "T4", "T5", "T6"};
 
         for (int i = 0; i < length; i++){
             std::cout << "Inserting element, i = " << i << "\n";
@@ -157,6 +148,10 @@ int main() {
             i.printDebugInfo();
         }
 
+
+
+    }
+    else {
 
         // Interestingly we don't have a copy created here
         modCTable(CTable("created_in_fly", 10), 20);
@@ -181,7 +176,7 @@ int main() {
         delete ptrCTable;
 
 
-        testScopeOfObjects();*/
+        testScopeOfObjects();
 
         int someInt = 26;
 
@@ -191,6 +186,16 @@ int main() {
         modifyInt(someInt);
         std::cout << "someInt = " << someInt << ", address = " << &someInt << "\n";
 
+        // allocated memory is not filled with zeros!
+        int ints[10];
+
+        for (int i : ints)
+            std::cout << i << "\n";
+
+        int ints2[10] {};
+
+        for (int i : ints2)
+            std::cout << i << "\n";
     }
 
     if (DEBUG) std::cout << "Exit main\n";
