@@ -4,6 +4,7 @@ CTable::CTable(std::string name, int tableLength) {
 	this->name = name;
 	this->length = tableLength;
 	this->array = new int[tableLength];
+    this->shareable = new Shareable;
     printInfo(PARAMETRIC_MESSAGE);
 }
 
@@ -11,14 +12,17 @@ CTable::CTable() {
 	this->name = NAME;
 	this->length = LENGTH;
 	this->array = new int[LENGTH];
+    this->shareable = new Shareable;
     printInfo(DEFAULT_MESSAGE);
 }
 
 CTable::CTable(const CTable& other) {
 	this->name = other.name + SUFFIX;
 	this->length = other.length;
-	this->array = new int[other.length];
-	ArrayUtils::copyIntArray(array, other.array, length);
+	this->array = other.array;
+    this->shareable = other.shareable;
+    shareable->incrementShares();
+	//ArrayUtils::copyIntArray(array, other.array, length);
     printInfo(COPY_MESSAGE);
 }
 void CTable::setName(std::string name) {
@@ -31,7 +35,8 @@ bool CTable::setNewLength(int newLength) {
 		int* newArray = new int[newLength];
 		ArrayUtils::copyIntArray(newArray, this->array,
                             (newLength < length) ? newLength : length);
-		delete[] array;
+        cleanUp();
+        this->shareable = new Shareable;
 		this->array = newArray;
         this->length = newLength;
 	}
@@ -45,8 +50,25 @@ CTable* CTable::clone(){
 // In our case destructor is useful for
 // deallocating dynamic memory
 CTable::~CTable() {
-	delete[] array;
+    cleanUp();
     printInfo(DELETE_MESSAGE);
+}
+
+void CTable::cleanUp(){
+    if (!shareable->isShared()){
+        delete[] array;
+        delete shareable;
+    } else {
+        shareable->decrementShares();
+    }
+}
+
+void CTable::fillTable(int fillValue){
+    ArrayUtils::fillArray(array, length, fillValue);
+}
+
+void CTable::displayTable(){
+    ArrayUtils::printIntArray(array, length);
 }
 
 void CTable::printInfo(const std::string& message) {

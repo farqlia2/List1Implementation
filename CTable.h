@@ -2,6 +2,7 @@
 #include <string>
 #include <iostream>
 #include "ArrayUtils.h"
+#include "Shareable.h"
 
 const std::string NAME = "default";
 const std::string SUFFIX = "_copy";
@@ -22,9 +23,13 @@ public:
 	bool setNewLength(int newLength);
 	CTable* clone();
 	void printDebugInfo();
+    void fillTable(int fillValue);
+    void displayTable();
 private:
+    Shareable* shareable;
 	std::string name;
 	int* array;
 	int  length;
 	void printInfo(const std::string& message);
+    void cleanUp();
 };
