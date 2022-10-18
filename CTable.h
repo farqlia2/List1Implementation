@@ -26,5 +26,5 @@ private:
 	std::string name;
 	int* array;
 	int  length;
-	void printName(const std::string& message);
+	void printInfo(const std::string& message);
 };

@@ -6,6 +6,6 @@
 #define LIST1IMPLEMENTATION_GLOBAL_H
 
 #define DEBUG true
-#define EXERCISE -1
+#define EXERCISE 3
 
 #endif //LIST1IMPLEMENTATION_GLOBAL_H

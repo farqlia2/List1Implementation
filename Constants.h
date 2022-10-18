@@ -9,8 +9,10 @@ const int ARRAY_SIZE = 10;
 const int ROWS = 3;
 const int COLS = 5;
 
-const int CTABLE_LENGTH = 15;
+const int NEW_CTABLE_LENGTH = 15;
 const int NEGATIVE_VALUE = -10;
+
+const int SIZE = 5;
 
 const std::string CTABLE_NAME = "my_ctable";
 const std::string DYNAMIC_CTABLE_NAME = "my_ctable_dynamic";

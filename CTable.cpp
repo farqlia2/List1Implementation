@@ -4,14 +4,14 @@ CTable::CTable(std::string name, int tableLength) {
 	this->name = name;
 	this->length = tableLength;
 	this->array = new int[tableLength];
-	printName(PARAMETRIC_MESSAGE);
+    printInfo(PARAMETRIC_MESSAGE);
 }
 
 CTable::CTable() {
 	this->name = NAME;
 	this->length = LENGTH;
 	this->array = new int[LENGTH];
-	printName(DEFAULT_MESSAGE);
+    printInfo(DEFAULT_MESSAGE);
 }
 
 CTable::CTable(const CTable& other) {
@@ -19,7 +19,7 @@ CTable::CTable(const CTable& other) {
 	this->length = other.length;
 	this->array = new int[other.length];
 	ArrayUtils::copyIntArray(array, other.array, length);
-	printName(COPY_MESSAGE);
+    printInfo(COPY_MESSAGE);
 }
 void CTable::setName(std::string name) {
 	this->name = name;
@@ -46,10 +46,10 @@ CTable* CTable::clone(){
 // deallocating dynamic memory
 CTable::~CTable() {
 	delete[] array;
-	printName(DELETE_MESSAGE);
+    printInfo(DELETE_MESSAGE);
 }
 
-void CTable::printName(const std::string& message) {
+void CTable::printInfo(const std::string& message) {
 	std::cout << message << ": " << this->name << "\n";
 }
 
