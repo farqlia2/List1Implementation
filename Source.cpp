@@ -4,6 +4,7 @@
 #include "Constants.h"
 #include "CTable.h"
 #include "ArrayUtils.h"
+#include "UserInterface.h"
 #include "Array2DimUtils.h"
 #include "Global.h"
 
@@ -26,9 +27,11 @@ void testScopeOfObjects();
 void modifyInt(int& anInt);
 void modifyCopyInt(int anInt);
 
+void testUserInterface();
 int main() {
     if (DEBUG) std::cout << "Enter main\n";
 
+    /*
     if (EXERCISE == 1){
         std::cout << "Exercise 1 Solution: \n";
 
@@ -197,8 +200,24 @@ int main() {
         for (int i : ints2)
             std::cout << i << "\n";
     }
+     */
+
+    testUserInterface();
 
     if (DEBUG) std::cout << "Exit main\n";
+
+}
+
+void testUserInterface(){
+
+    UserInterface UI;
+
+    UI.initializeCTablesHandler();
+
+    bool isExecuting;
+    do {
+        isExecuting = UI.execute();
+    } while (isExecuting);
 
 }
 
