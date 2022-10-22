@@ -1,11 +1,12 @@
 #pragma once
 #include <string>
 #include <iostream>
+#include <sstream>
 #include "ArrayUtils.h"
 
-const std::string NAME = "default";
+const std::string DEFAULT_NAME = "default";
 const std::string SUFFIX = "_copy";
-const int LENGTH = 10;
+const int DEFAULT_LENGTH = 10;
 
 const std::string DEFAULT_MESSAGE = "default";
 const std::string PARAMETRIC_MESSAGE = "parametric";
@@ -21,7 +22,7 @@ public:
 	void setName(std::string name);
 	bool setNewLength(int newLength);
 	CTable* clone();
-	void printDebugInfo();
+    std::string getDebugInfo();
 private:
 	std::string name;
 	int* array;
