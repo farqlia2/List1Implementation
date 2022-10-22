@@ -17,8 +17,12 @@ void modCTable(CTable *table, int newLength);
 
 void allocateArrayFill34(int size);
 
+void triangleMatrix(int*** matrix, int size);
 
 int main() {
+
+    int** matrix;
+    triangleMatrix(&matrix, MATRIX_SIZE);
 
     allocateArrayFill34(ARRAY_SIZE);
 
@@ -96,4 +100,17 @@ void modCTable(CTable *table, int newLength){
 
 void allocateArrayFill34(int size){
     ArrayUtils::allocateArrayFill(size, FILL_VALUE);
+}
+
+void triangleMatrix(int*** matrix, int size){
+
+    if (Array2DimUtils::allocate2DimArray(matrix, size, size)){
+        for (int i = 0; i < size; i++){
+            for (int j = 0; j < size; j++){
+                (*matrix)[i][j] = (j <= i) ? 1 : 0;
+            }
+        }
+        Array2DimUtils::print2DimArray(*matrix, size, size);
+    }
+
 }

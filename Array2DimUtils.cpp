@@ -13,10 +13,8 @@ bool Array2DimUtils::allocate2DimArray(int*** array2Dim, int rows, int cols) {
     bool canBeAllocated = isArray2DimSizeValid(rows, cols);
     if (canBeAllocated) {
         (*array2Dim) = new int* [rows];
-        if (DEBUG) std::cout << "array2Dim = " << array2Dim << "\n";
         for (int i = 0; i < rows; i++) {
             (*array2Dim)[i] = new int[cols];
-            if (DEBUG) std::cout << "array2Dim[" << i << "] = " << array2Dim[i] << "\n";
         }
     }
     return canBeAllocated;
@@ -32,7 +30,6 @@ void Array2DimUtils::fill2DimArray(int** array2Dim, int rows, int cols,
 void Array2DimUtils::print2DimArray(int** array2Dim, int rows, int cols) {
     for (int i = 0; i < rows; i++) {
         ArrayUtils::printIntArray(array2Dim[i], cols);
-        std::cout << "\n";
     }
 }
 

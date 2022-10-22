@@ -3,6 +3,8 @@
 #include <string>
 #include <vector>
 
+const int MATRIX_SIZE = 10;
+
 const int FILL_VALUE = 34;
 const int ARRAY_SIZE = 10;
 
