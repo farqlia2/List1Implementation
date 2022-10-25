@@ -6,6 +6,7 @@
 #include "ArrayUtils.h"
 #include "Array2DimUtils.h"
 #include "Global.h"
+#include "Array3DimUtils.h"
 
 /*
 If (DEBUG) => jakies cout i dalej
@@ -29,6 +30,7 @@ void modifyCopyInt(int anInt);
 int main() {
     if (DEBUG) std::cout << "Enter main\n";
 
+    /*
     CTable* aTable = new CTable;
     aTable->displayTable();
 
@@ -56,7 +58,25 @@ int main() {
 
     cT4->displayTable();
 
-    delete cT4;
+    delete cT4;*/
+
+    int*** pointer;
+
+    std::cout << Array3DimUtils::create3DimArray(0, 5, 6, &pointer) << "\n";
+    std::cout << Array3DimUtils::create3DimArray(3, 5, 6, &pointer) << "\n";
+    Array3DimUtils::fill3DimArray(3, 5, 6, 55, pointer);
+
+    pointer[0][4][5] = 0;
+    std::cout << Array3DimUtils::getMean3DimArray(3, 5, 6, pointer) << "\n";
+
+    std::cout << Array3DimUtils::change3DimArray(3, 5, 6, 1, 2, 3, &pointer) << "\n";
+
+    Array3DimUtils::fill3DimArray(1, 2, 3, 0, pointer);
+    pointer[0][1][1] = 6;
+
+    std::cout << Array3DimUtils::getMean3DimArray(1, 2, 3, pointer) << "\n";
+
+    Array3DimUtils::delete3DimArray(1, 2, pointer);
 
     if (DEBUG) std::cout << "Exit main\n";
 
