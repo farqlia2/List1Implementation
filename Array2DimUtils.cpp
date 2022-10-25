@@ -10,7 +10,7 @@
 // a oryginalny wskaznik w main ma wciąż przypisane jakieś śmieci
 bool Array2DimUtils::allocate2DimArray(int*** array2Dim, int rows, int cols) {
 
-    bool canBeAllocated = isArray2DimSizeValid(rows, cols);
+    bool canBeAllocated = is2DimArraySizeValid(rows, cols);
     if (canBeAllocated) {
         (*array2Dim) = new int* [rows];
         if (DEBUG) std::cout << "array2Dim = " << array2Dim << "\n";
@@ -36,19 +36,18 @@ void Array2DimUtils::print2DimArray(int** array2Dim, int rows, int cols) {
     }
 }
 
-bool Array2DimUtils::deallocate2DimArray(int** array2Dim, int rows) {
+bool Array2DimUtils::deallocate2DimArray(int** array2Dim, int rows, int cols) {
 
-    bool canBeDeallocated = rows > 0;
+    bool canBeDeallocated = is2DimArraySizeValid(rows, cols);
     if (canBeDeallocated) {
         for (int i = 0; i < rows; i++) {
             delete[] array2Dim[i];
         }
         delete[] array2Dim;
     }
-    // TODO : is this correct
     return canBeDeallocated;
 }
 
-bool Array2DimUtils::isArray2DimSizeValid(int rows, int cols) {
+bool Array2DimUtils::is2DimArraySizeValid(int rows, int cols) {
     return (rows > 0 && cols > 0);
 }

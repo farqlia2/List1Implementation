@@ -55,7 +55,6 @@ void CTable::printInfo(const std::string& message) {
 	std::cout << message << ": " << this->name << "\n";
 }
 
-// TODO : it makes sense for this exercise to print things out, but in general it is bad
 std::string CTable::getDebugInfo() {
     std::stringstream lengthString, arrayAddress, addressString;
     lengthString << length;

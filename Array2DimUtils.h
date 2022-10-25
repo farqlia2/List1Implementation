@@ -17,9 +17,9 @@ public:
     static void fill2DimArray(int** array2Dim, int rows, int cols,
                               int fillValue);
 
-    static bool deallocate2DimArray(int** array2Dim, int rows);
+    static bool deallocate2DimArray(int** array2Dim, int rows, int cols);
 
-    static bool isArray2DimSizeValid(int rows, int cols);
+    static bool is2DimArraySizeValid(int rows, int cols);
 };
 
 

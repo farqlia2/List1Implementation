@@ -26,7 +26,7 @@ int main() {
     if (Array2DimUtils::allocate2DimArray(&pointer2DArray, ROWS, COLS)){
         if (DEBUG) Array2DimUtils::fill2DimArray(pointer2DArray, ROWS, COLS, FILL_VALUE);
         if (DEBUG) Array2DimUtils::print2DimArray(pointer2DArray, ROWS, COLS);
-        Array2DimUtils::deallocate2DimArray(pointer2DArray, ROWS);
+        Array2DimUtils::deallocate2DimArray(pointer2DArray, ROWS, COLS);
         if (DEBUG) {
             std::cout << "After deallocating\n";
             ArrayUtils::printIntArray(pointer2DArray[1], COLS);
@@ -66,9 +66,14 @@ int main() {
     modCTable(&nonParamCTable, NEW_CTABLE_LENGTH);
 
     std::cout << "Allocate static array: \n";
+    // In static allocation, constructor and destructor is automatically called
     CTable cTableStaticArray[SIZE];
 
+    // However, this is not true for primitive types : add {} to initialize with 'zeros'
+    int ints[10] {};
+
     if (DEBUG) std::cout << "\nAllocate dynamic array: \n";
+    // This memory now is uninitialized
     CTable* cTableDynamicArray;
 
     // The default constructor is called for each 'slot'
