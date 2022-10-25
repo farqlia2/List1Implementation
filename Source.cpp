@@ -17,7 +17,6 @@ void modCTable(CTable *table, int newLength);
 
 void allocateArrayFill34(int size);
 
-
 int main() {
 
     allocateArrayFill34(ARRAY_SIZE);
