@@ -10,13 +10,16 @@
 
 class Array2DimUtils {
 public:
-    static bool allocate2DimArray(int**& array2Dim, int rows, int cols);
+    static bool allocate2DimArray(int*** array2Dim, int rows, int cols);
 
     static void print2DimArray(int** array2Dim, int rows, int cols);
 
-    static bool deallocate2DimArray(int**& array2Dim, int rows);
+    static void fill2DimArray(int** array2Dim, int rows, int cols,
+                              int fillValue);
 
-    static bool isArray2DimSizeValid(int rows, int cols);
+    static bool deallocate2DimArray(int** array2Dim, int rows, int cols);
+
+    static bool is2DimArraySizeValid(int rows, int cols);
 };
 
 

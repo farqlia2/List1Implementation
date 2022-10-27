@@ -8,12 +8,14 @@ CTable::CTable(std::string name, int tableLength) {
 }
 
 CTable::CTable() {
-	this->name = NAME;
-	this->length = LENGTH;
-	this->array = new int[LENGTH];
+	this->name = DEFAULT_NAME;
+	this->length = DEFAULT_LENGTH;
+	this->array = new int[DEFAULT_LENGTH];
     printInfo(DEFAULT_MESSAGE);
 }
-
+// copy constructor should be used
+// if we have some dynamic memory allocated, or we don't
+// want to copy some fields
 CTable::CTable(const CTable& other) {
 	this->name = other.name + SUFFIX;
 	this->length = other.length;
@@ -21,7 +23,7 @@ CTable::CTable(const CTable& other) {
 	ArrayUtils::copyIntArray(array, other.array, length);
     printInfo(COPY_MESSAGE);
 }
-void CTable::setName(std::string name) {
+void CTable::setName(std::string name){
 	this->name = name;
 }
 bool CTable::setNewLength(int newLength) {
@@ -53,8 +55,12 @@ void CTable::printInfo(const std::string& message) {
 	std::cout << message << ": " << this->name << "\n";
 }
 
-void CTable::printDebugInfo() {
-	std::cout << "My name is " << name
-		<< ", length = " << length << ", array = " << 
-		array << ", address = " << this << "\n";
+std::string CTable::getDebugInfo() {
+    std::stringstream lengthString, arrayAddress, addressString;
+    lengthString << length;
+    arrayAddress << &array;
+    addressString << this;
+	return "My name is " + name
+		+ ", length = " + lengthString.str() + ", array = " +
+		arrayAddress.str() + ", address = " + addressString.str() + "\n";
 }
