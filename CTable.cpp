@@ -13,9 +13,6 @@ CTable::CTable() {
 	this->array = new int[DEFAULT_LENGTH];
     printInfo(DEFAULT_MESSAGE);
 }
-// copy constructor should be used
-// if we have some dynamic memory allocated, or we don't
-// want to copy some fields
 CTable::CTable(const CTable& other) {
 	this->name = other.name + SUFFIX;
 	this->length = other.length;
@@ -27,7 +24,6 @@ void CTable::setName(std::string name){
 	this->name = name;
 }
 bool CTable::setNewLength(int newLength) {
-    // Can the new size be smaller than the current one?
 	bool isSizeValid = newLength > 0;
 	if (isSizeValid) {
 		int* newArray = new int[newLength];
