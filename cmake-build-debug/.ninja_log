@@ -1,0 +1,19 @@
+# ninja log v5
+1045	1757	6884308196879706	CMakeFiles/List1Implementation.dir/Array3DimUtils.cpp.obj	34d9d19a92255b27
+13	1206	6884308190563630	CMakeFiles/List1Implementation.dir/CTable.cpp.obj	ad5a3edc8d7fcb0c
+21	1575	6876422371369961	CMakeFiles/List1Implementation.dir/Utils.cpp.obj	530f807ca8cd4c9f
+3	549	6884308395845647	build.ninja	873190be502414ae
+8	1197	6884308190594428	CMakeFiles/List1Implementation.dir/ArrayUtils.cpp.obj	1ae0bc453c3b0f50
+1349	1526	6884254373213990	List1Implementation.exe	7f61d1a88faf74ae
+1198	1857	6884308197877024	CMakeFiles/List1Implementation.dir/Source.cpp.obj	5e482f298a65ec40
+19	1044	6884308189585518	CMakeFiles/List1Implementation.dir/Array2DimUtils.cpp.obj	8db695310891378f
+22	1520	6878083958544964	CMakeFiles/List1Implementation.dir/Shareable.cpp.obj	8d7e157fb9c258c9
+5	544	6884308424232032	CMakeFiles/List1Implementation.dir/Shareable.cpp.obj	8d7e157fb9c258c9
+545	711	6884308425811054	List1Implementation.exe	a891eda359e263ed
+4	702	6884308567569176	CMakeFiles/List1Implementation.dir/Source.cpp.obj	5e482f298a65ec40
+703	864	6884308569109744	List1Implementation.exe	a891eda359e263ed
+5	664	6884310961751439	CMakeFiles/List1Implementation.dir/Source.cpp.obj	5e482f298a65ec40
+665	842	6884310963441942	List1Implementation.exe	a891eda359e263ed
+12	1641	6884313233998970	CMakeFiles/List1Implementation.dir/Array3DimUtils.cpp.obj	34d9d19a92255b27
+5	1747	6884313235242692	CMakeFiles/List1Implementation.dir/Source.cpp.obj	5e482f298a65ec40
+1747	2219	6884313238670734	List1Implementation.exe	a891eda359e263ed
