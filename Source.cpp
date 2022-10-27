@@ -69,7 +69,32 @@ int main() {
     CTable cTableStaticArray[SIZE];
 
     // However, this is not true for primitive types : add {} to initialize with 'zeros'
-    int ints[10] {};
+    int ints[10];
+
+    char value;
+    std::cout << "Static = " << value << "\n";
+
+    for (int i : ints) std::cout << i << "\n";
+
+    double doubles[10];
+
+    for (double i : doubles) std::cout << i << "\n";
+
+    std::string* strings;
+
+    strings = new std::string[10];
+
+    for (int i = 0; i < 10; i++) std::cout << strings[i] << "\n";
+
+    int* ptr;
+    ptr = new int;
+
+    (*ptr) = 5;
+
+    double* dPtr;
+    dPtr = (double*) ptr;
+
+    (*dPtr) = 10.0;
 
     if (DEBUG) std::cout << "\nAllocate dynamic array: \n";
     // This memory now is uninitialized
@@ -78,13 +103,15 @@ int main() {
     // The default constructor is called for each 'slot'
     cTableDynamicArray = new CTable[SIZE];
 
+
     if (DEBUG) std::cout << "\nDeallocate dynamic array: \n";
     delete [] cTableDynamicArray;
 
     if (DEBUG) std::cout << "\nTest dynamic allocation with a vector\n";
+
     std::vector<CTable> vector;
     for (int i = 0; i < VECTOR_LENGTH; i++){
-        vector.push_back(CTable(CTABLE_NAMES[i],CTABLE_LENGTHS[i]));
+        vector.push_back(CTable(CTABLE_NAMES[i], CTABLE_LENGTHS[i]));
     }
 
     if (DEBUG) std::cout << "\n";

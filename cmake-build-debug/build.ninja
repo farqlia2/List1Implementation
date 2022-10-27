@@ -39,7 +39,7 @@ include CMakeFiles/rules.ninja
 #############################################
 # Logical path to working directory; prefix for absolute paths.
 
-cmake_ninja_workdir = C$:/Users/Lenovo/CLionProjects/List1Implementation/cmake-build-debug/
+cmake_ninja_workdir = C$:/Users/julia/CLionProjects/List1Implementation/cmake-build-debug/
 # =============================================================================
 # Object build statements for EXECUTABLE target List1Implementation
 
@@ -49,45 +49,45 @@ cmake_ninja_workdir = C$:/Users/Lenovo/CLionProjects/List1Implementation/cmake-b
 
 build cmake_object_order_depends_target_List1Implementation: phony || CMakeFiles/List1Implementation.dir
 
-build CMakeFiles/List1Implementation.dir/CTable.cpp.obj: CXX_COMPILER__List1Implementation_Debug C$:/Users/Lenovo/CLionProjects/List1Implementation/CTable.cpp || cmake_object_order_depends_target_List1Implementation
-  DEP_FILE = CMakeFiles\List1Implementation.dir\CTable.cpp.obj.d
-  FLAGS = -g -std=gnu++14
-  INCLUDES = -IC:/Users/Lenovo/CLionProjects/List1Implementation/.
-  OBJECT_DIR = CMakeFiles\List1Implementation.dir
-  OBJECT_FILE_DIR = CMakeFiles\List1Implementation.dir
-
-build CMakeFiles/List1Implementation.dir/Source.cpp.obj: CXX_COMPILER__List1Implementation_Debug C$:/Users/Lenovo/CLionProjects/List1Implementation/Source.cpp || cmake_object_order_depends_target_List1Implementation
-  DEP_FILE = CMakeFiles\List1Implementation.dir\Source.cpp.obj.d
-  FLAGS = -g -std=gnu++14
-  INCLUDES = -IC:/Users/Lenovo/CLionProjects/List1Implementation/.
-  OBJECT_DIR = CMakeFiles\List1Implementation.dir
-  OBJECT_FILE_DIR = CMakeFiles\List1Implementation.dir
-
-build CMakeFiles/List1Implementation.dir/ArrayUtils.cpp.obj: CXX_COMPILER__List1Implementation_Debug C$:/Users/Lenovo/CLionProjects/List1Implementation/ArrayUtils.cpp || cmake_object_order_depends_target_List1Implementation
-  DEP_FILE = CMakeFiles\List1Implementation.dir\ArrayUtils.cpp.obj.d
-  FLAGS = -g -std=gnu++14
-  INCLUDES = -IC:/Users/Lenovo/CLionProjects/List1Implementation/.
-  OBJECT_DIR = CMakeFiles\List1Implementation.dir
-  OBJECT_FILE_DIR = CMakeFiles\List1Implementation.dir
-
-build CMakeFiles/List1Implementation.dir/Array2DimUtils.cpp.obj: CXX_COMPILER__List1Implementation_Debug C$:/Users/Lenovo/CLionProjects/List1Implementation/Array2DimUtils.cpp || cmake_object_order_depends_target_List1Implementation
+build CMakeFiles/List1Implementation.dir/Array2DimUtils.cpp.obj: CXX_COMPILER__List1Implementation_Debug C$:/Users/julia/CLionProjects/List1Implementation/Array2DimUtils.cpp || cmake_object_order_depends_target_List1Implementation
   DEP_FILE = CMakeFiles\List1Implementation.dir\Array2DimUtils.cpp.obj.d
   FLAGS = -g -std=gnu++14
-  INCLUDES = -IC:/Users/Lenovo/CLionProjects/List1Implementation/.
+  INCLUDES = -IC:/Users/julia/CLionProjects/List1Implementation/.
   OBJECT_DIR = CMakeFiles\List1Implementation.dir
   OBJECT_FILE_DIR = CMakeFiles\List1Implementation.dir
 
-build CMakeFiles/List1Implementation.dir/Array3DimUtils.cpp.obj: CXX_COMPILER__List1Implementation_Debug C$:/Users/Lenovo/CLionProjects/List1Implementation/Array3DimUtils.cpp || cmake_object_order_depends_target_List1Implementation
+build CMakeFiles/List1Implementation.dir/ArrayUtils.cpp.obj: CXX_COMPILER__List1Implementation_Debug C$:/Users/julia/CLionProjects/List1Implementation/ArrayUtils.cpp || cmake_object_order_depends_target_List1Implementation
+  DEP_FILE = CMakeFiles\List1Implementation.dir\ArrayUtils.cpp.obj.d
+  FLAGS = -g -std=gnu++14
+  INCLUDES = -IC:/Users/julia/CLionProjects/List1Implementation/.
+  OBJECT_DIR = CMakeFiles\List1Implementation.dir
+  OBJECT_FILE_DIR = CMakeFiles\List1Implementation.dir
+
+build CMakeFiles/List1Implementation.dir/CTable.cpp.obj: CXX_COMPILER__List1Implementation_Debug C$:/Users/julia/CLionProjects/List1Implementation/CTable.cpp || cmake_object_order_depends_target_List1Implementation
+  DEP_FILE = CMakeFiles\List1Implementation.dir\CTable.cpp.obj.d
+  FLAGS = -g -std=gnu++14
+  INCLUDES = -IC:/Users/julia/CLionProjects/List1Implementation/.
+  OBJECT_DIR = CMakeFiles\List1Implementation.dir
+  OBJECT_FILE_DIR = CMakeFiles\List1Implementation.dir
+
+build CMakeFiles/List1Implementation.dir/Source.cpp.obj: CXX_COMPILER__List1Implementation_Debug C$:/Users/julia/CLionProjects/List1Implementation/Source.cpp || cmake_object_order_depends_target_List1Implementation
+  DEP_FILE = CMakeFiles\List1Implementation.dir\Source.cpp.obj.d
+  FLAGS = -g -std=gnu++14
+  INCLUDES = -IC:/Users/julia/CLionProjects/List1Implementation/.
+  OBJECT_DIR = CMakeFiles\List1Implementation.dir
+  OBJECT_FILE_DIR = CMakeFiles\List1Implementation.dir
+
+build CMakeFiles/List1Implementation.dir/UserInterface.cpp.obj: CXX_COMPILER__List1Implementation_Debug C$:/Users/julia/CLionProjects/List1Implementation/UserInterface.cpp || cmake_object_order_depends_target_List1Implementation
+  DEP_FILE = CMakeFiles\List1Implementation.dir\UserInterface.cpp.obj.d
+  FLAGS = -g -std=gnu++14
+  INCLUDES = -IC:/Users/julia/CLionProjects/List1Implementation/.
+  OBJECT_DIR = CMakeFiles\List1Implementation.dir
+  OBJECT_FILE_DIR = CMakeFiles\List1Implementation.dir
+
+build CMakeFiles/List1Implementation.dir/Array3DimUtils.cpp.obj: CXX_COMPILER__List1Implementation_Debug C$:/Users/julia/CLionProjects/List1Implementation/Array3DimUtils.cpp || cmake_object_order_depends_target_List1Implementation
   DEP_FILE = CMakeFiles\List1Implementation.dir\Array3DimUtils.cpp.obj.d
   FLAGS = -g -std=gnu++14
-  INCLUDES = -IC:/Users/Lenovo/CLionProjects/List1Implementation/.
-  OBJECT_DIR = CMakeFiles\List1Implementation.dir
-  OBJECT_FILE_DIR = CMakeFiles\List1Implementation.dir
-
-build CMakeFiles/List1Implementation.dir/Shareable.cpp.obj: CXX_COMPILER__List1Implementation_Debug C$:/Users/Lenovo/CLionProjects/List1Implementation/Shareable.cpp || cmake_object_order_depends_target_List1Implementation
-  DEP_FILE = CMakeFiles\List1Implementation.dir\Shareable.cpp.obj.d
-  FLAGS = -g -std=gnu++14
-  INCLUDES = -IC:/Users/Lenovo/CLionProjects/List1Implementation/.
+  INCLUDES = -IC:/Users/julia/CLionProjects/List1Implementation/.
   OBJECT_DIR = CMakeFiles\List1Implementation.dir
   OBJECT_FILE_DIR = CMakeFiles\List1Implementation.dir
 
@@ -99,7 +99,7 @@ build CMakeFiles/List1Implementation.dir/Shareable.cpp.obj: CXX_COMPILER__List1I
 #############################################
 # Link the executable List1Implementation.exe
 
-build List1Implementation.exe: CXX_EXECUTABLE_LINKER__List1Implementation_Debug CMakeFiles/List1Implementation.dir/CTable.cpp.obj CMakeFiles/List1Implementation.dir/Source.cpp.obj CMakeFiles/List1Implementation.dir/ArrayUtils.cpp.obj CMakeFiles/List1Implementation.dir/Array2DimUtils.cpp.obj CMakeFiles/List1Implementation.dir/Array3DimUtils.cpp.obj CMakeFiles/List1Implementation.dir/Shareable.cpp.obj
+build List1Implementation.exe: CXX_EXECUTABLE_LINKER__List1Implementation_Debug CMakeFiles/List1Implementation.dir/Array2DimUtils.cpp.obj CMakeFiles/List1Implementation.dir/ArrayUtils.cpp.obj CMakeFiles/List1Implementation.dir/CTable.cpp.obj CMakeFiles/List1Implementation.dir/Source.cpp.obj CMakeFiles/List1Implementation.dir/UserInterface.cpp.obj CMakeFiles/List1Implementation.dir/Array3DimUtils.cpp.obj
   FLAGS = -g
   LINK_LIBRARIES = -lkernel32 -luser32 -lgdi32 -lwinspool -lshell32 -lole32 -loleaut32 -luuid -lcomdlg32 -ladvapi32
   OBJECT_DIR = CMakeFiles\List1Implementation.dir
@@ -114,7 +114,7 @@ build List1Implementation.exe: CXX_EXECUTABLE_LINKER__List1Implementation_Debug 
 # Utility command for edit_cache
 
 build CMakeFiles/edit_cache.util: CUSTOM_COMMAND
-  COMMAND = cmd.exe /C "cd /D C:\Users\Lenovo\CLionProjects\List1Implementation\cmake-build-debug && "C:\Program Files\JetBrains\CLion 2022.2.3\bin\cmake\win\bin\cmake.exe" -E echo "No interactive CMake dialog available.""
+  COMMAND = cmd.exe /C "cd /D C:\Users\julia\CLionProjects\List1Implementation\cmake-build-debug && "C:\Program Files\JetBrains\CLion 2022.2.4\bin\cmake\win\bin\cmake.exe" -E echo "No interactive CMake dialog available.""
   DESC = No interactive CMake dialog available...
   restat = 1
 
@@ -125,7 +125,7 @@ build edit_cache: phony CMakeFiles/edit_cache.util
 # Utility command for rebuild_cache
 
 build CMakeFiles/rebuild_cache.util: CUSTOM_COMMAND
-  COMMAND = cmd.exe /C "cd /D C:\Users\Lenovo\CLionProjects\List1Implementation\cmake-build-debug && "C:\Program Files\JetBrains\CLion 2022.2.3\bin\cmake\win\bin\cmake.exe" --regenerate-during-build -SC:\Users\Lenovo\CLionProjects\List1Implementation -BC:\Users\Lenovo\CLionProjects\List1Implementation\cmake-build-debug"
+  COMMAND = cmd.exe /C "cd /D C:\Users\julia\CLionProjects\List1Implementation\cmake-build-debug && "C:\Program Files\JetBrains\CLion 2022.2.4\bin\cmake\win\bin\cmake.exe" --regenerate-during-build -SC:\Users\julia\CLionProjects\List1Implementation -BC:\Users\julia\CLionProjects\List1Implementation\cmake-build-debug"
   DESC = Running CMake to regenerate build system...
   pool = console
   restat = 1
@@ -143,7 +143,7 @@ build List1Implementation: phony List1Implementation.exe
 # =============================================================================
 
 #############################################
-# Folder: C:/Users/Lenovo/CLionProjects/List1Implementation/cmake-build-debug
+# Folder: C:/Users/julia/CLionProjects/List1Implementation/cmake-build-debug
 
 build all: phony List1Implementation.exe
 
@@ -154,14 +154,14 @@ build all: phony List1Implementation.exe
 #############################################
 # Re-run CMake if any of its inputs changed.
 
-build build.ninja: RERUN_CMAKE | ../CMakeLists.txt C$:/Program$ Files/JetBrains/CLion$ 2022.2.3/bin/cmake/win/share/cmake-3.23/Modules/CMakeCInformation.cmake C$:/Program$ Files/JetBrains/CLion$ 2022.2.3/bin/cmake/win/share/cmake-3.23/Modules/CMakeCXXInformation.cmake C$:/Program$ Files/JetBrains/CLion$ 2022.2.3/bin/cmake/win/share/cmake-3.23/Modules/CMakeCommonLanguageInclude.cmake C$:/Program$ Files/JetBrains/CLion$ 2022.2.3/bin/cmake/win/share/cmake-3.23/Modules/CMakeGenericSystem.cmake C$:/Program$ Files/JetBrains/CLion$ 2022.2.3/bin/cmake/win/share/cmake-3.23/Modules/CMakeInitializeConfigs.cmake C$:/Program$ Files/JetBrains/CLion$ 2022.2.3/bin/cmake/win/share/cmake-3.23/Modules/CMakeLanguageInformation.cmake C$:/Program$ Files/JetBrains/CLion$ 2022.2.3/bin/cmake/win/share/cmake-3.23/Modules/CMakeRCInformation.cmake C$:/Program$ Files/JetBrains/CLion$ 2022.2.3/bin/cmake/win/share/cmake-3.23/Modules/CMakeSystemSpecificInformation.cmake C$:/Program$ Files/JetBrains/CLion$ 2022.2.3/bin/cmake/win/share/cmake-3.23/Modules/CMakeSystemSpecificInitialize.cmake C$:/Program$ Files/JetBrains/CLion$ 2022.2.3/bin/cmake/win/share/cmake-3.23/Modules/Compiler/CMakeCommonCompilerMacros.cmake C$:/Program$ Files/JetBrains/CLion$ 2022.2.3/bin/cmake/win/share/cmake-3.23/Modules/Compiler/GNU-C.cmake C$:/Program$ Files/JetBrains/CLion$ 2022.2.3/bin/cmake/win/share/cmake-3.23/Modules/Compiler/GNU-CXX.cmake C$:/Program$ Files/JetBrains/CLion$ 2022.2.3/bin/cmake/win/share/cmake-3.23/Modules/Compiler/GNU.cmake C$:/Program$ Files/JetBrains/CLion$ 2022.2.3/bin/cmake/win/share/cmake-3.23/Modules/Platform/Windows-GNU-C-ABI.cmake C$:/Program$ Files/JetBrains/CLion$ 2022.2.3/bin/cmake/win/share/cmake-3.23/Modules/Platform/Windows-GNU-C.cmake C$:/Program$ Files/JetBrains/CLion$ 2022.2.3/bin/cmake/win/share/cmake-3.23/Modules/Platform/Windows-GNU-CXX-ABI.cmake C$:/Program$ Files/JetBrains/CLion$ 2022.2.3/bin/cmake/win/share/cmake-3.23/Modules/Platform/Windows-GNU-CXX.cmake C$:/Program$ Files/JetBrains/CLion$ 2022.2.3/bin/cmake/win/share/cmake-3.23/Modules/Platform/Windows-GNU.cmake C$:/Program$ Files/JetBrains/CLion$ 2022.2.3/bin/cmake/win/share/cmake-3.23/Modules/Platform/Windows-windres.cmake C$:/Program$ Files/JetBrains/CLion$ 2022.2.3/bin/cmake/win/share/cmake-3.23/Modules/Platform/Windows.cmake C$:/Program$ Files/JetBrains/CLion$ 2022.2.3/bin/cmake/win/share/cmake-3.23/Modules/Platform/WindowsPaths.cmake CMakeCache.txt CMakeFiles/3.23.2/CMakeCCompiler.cmake CMakeFiles/3.23.2/CMakeCXXCompiler.cmake CMakeFiles/3.23.2/CMakeRCCompiler.cmake CMakeFiles/3.23.2/CMakeSystem.cmake
+build build.ninja: RERUN_CMAKE | ../CMakeLists.txt C$:/Program$ Files/JetBrains/CLion$ 2022.2.4/bin/cmake/win/share/cmake-3.23/Modules/CMakeCInformation.cmake C$:/Program$ Files/JetBrains/CLion$ 2022.2.4/bin/cmake/win/share/cmake-3.23/Modules/CMakeCXXInformation.cmake C$:/Program$ Files/JetBrains/CLion$ 2022.2.4/bin/cmake/win/share/cmake-3.23/Modules/CMakeCommonLanguageInclude.cmake C$:/Program$ Files/JetBrains/CLion$ 2022.2.4/bin/cmake/win/share/cmake-3.23/Modules/CMakeGenericSystem.cmake C$:/Program$ Files/JetBrains/CLion$ 2022.2.4/bin/cmake/win/share/cmake-3.23/Modules/CMakeInitializeConfigs.cmake C$:/Program$ Files/JetBrains/CLion$ 2022.2.4/bin/cmake/win/share/cmake-3.23/Modules/CMakeLanguageInformation.cmake C$:/Program$ Files/JetBrains/CLion$ 2022.2.4/bin/cmake/win/share/cmake-3.23/Modules/CMakeRCInformation.cmake C$:/Program$ Files/JetBrains/CLion$ 2022.2.4/bin/cmake/win/share/cmake-3.23/Modules/CMakeSystemSpecificInformation.cmake C$:/Program$ Files/JetBrains/CLion$ 2022.2.4/bin/cmake/win/share/cmake-3.23/Modules/CMakeSystemSpecificInitialize.cmake C$:/Program$ Files/JetBrains/CLion$ 2022.2.4/bin/cmake/win/share/cmake-3.23/Modules/Compiler/CMakeCommonCompilerMacros.cmake C$:/Program$ Files/JetBrains/CLion$ 2022.2.4/bin/cmake/win/share/cmake-3.23/Modules/Compiler/GNU-C.cmake C$:/Program$ Files/JetBrains/CLion$ 2022.2.4/bin/cmake/win/share/cmake-3.23/Modules/Compiler/GNU-CXX.cmake C$:/Program$ Files/JetBrains/CLion$ 2022.2.4/bin/cmake/win/share/cmake-3.23/Modules/Compiler/GNU.cmake C$:/Program$ Files/JetBrains/CLion$ 2022.2.4/bin/cmake/win/share/cmake-3.23/Modules/Platform/Windows-GNU-C-ABI.cmake C$:/Program$ Files/JetBrains/CLion$ 2022.2.4/bin/cmake/win/share/cmake-3.23/Modules/Platform/Windows-GNU-C.cmake C$:/Program$ Files/JetBrains/CLion$ 2022.2.4/bin/cmake/win/share/cmake-3.23/Modules/Platform/Windows-GNU-CXX-ABI.cmake C$:/Program$ Files/JetBrains/CLion$ 2022.2.4/bin/cmake/win/share/cmake-3.23/Modules/Platform/Windows-GNU-CXX.cmake C$:/Program$ Files/JetBrains/CLion$ 2022.2.4/bin/cmake/win/share/cmake-3.23/Modules/Platform/Windows-GNU.cmake C$:/Program$ Files/JetBrains/CLion$ 2022.2.4/bin/cmake/win/share/cmake-3.23/Modules/Platform/Windows-windres.cmake C$:/Program$ Files/JetBrains/CLion$ 2022.2.4/bin/cmake/win/share/cmake-3.23/Modules/Platform/Windows.cmake C$:/Program$ Files/JetBrains/CLion$ 2022.2.4/bin/cmake/win/share/cmake-3.23/Modules/Platform/WindowsPaths.cmake CMakeCache.txt CMakeFiles/3.23.2/CMakeCCompiler.cmake CMakeFiles/3.23.2/CMakeCXXCompiler.cmake CMakeFiles/3.23.2/CMakeRCCompiler.cmake CMakeFiles/3.23.2/CMakeSystem.cmake
   pool = console
 
 
 #############################################
 # A missing CMake input file is not an error.
 
-build ../CMakeLists.txt C$:/Program$ Files/JetBrains/CLion$ 2022.2.3/bin/cmake/win/share/cmake-3.23/Modules/CMakeCInformation.cmake C$:/Program$ Files/JetBrains/CLion$ 2022.2.3/bin/cmake/win/share/cmake-3.23/Modules/CMakeCXXInformation.cmake C$:/Program$ Files/JetBrains/CLion$ 2022.2.3/bin/cmake/win/share/cmake-3.23/Modules/CMakeCommonLanguageInclude.cmake C$:/Program$ Files/JetBrains/CLion$ 2022.2.3/bin/cmake/win/share/cmake-3.23/Modules/CMakeGenericSystem.cmake C$:/Program$ Files/JetBrains/CLion$ 2022.2.3/bin/cmake/win/share/cmake-3.23/Modules/CMakeInitializeConfigs.cmake C$:/Program$ Files/JetBrains/CLion$ 2022.2.3/bin/cmake/win/share/cmake-3.23/Modules/CMakeLanguageInformation.cmake C$:/Program$ Files/JetBrains/CLion$ 2022.2.3/bin/cmake/win/share/cmake-3.23/Modules/CMakeRCInformation.cmake C$:/Program$ Files/JetBrains/CLion$ 2022.2.3/bin/cmake/win/share/cmake-3.23/Modules/CMakeSystemSpecificInformation.cmake C$:/Program$ Files/JetBrains/CLion$ 2022.2.3/bin/cmake/win/share/cmake-3.23/Modules/CMakeSystemSpecificInitialize.cmake C$:/Program$ Files/JetBrains/CLion$ 2022.2.3/bin/cmake/win/share/cmake-3.23/Modules/Compiler/CMakeCommonCompilerMacros.cmake C$:/Program$ Files/JetBrains/CLion$ 2022.2.3/bin/cmake/win/share/cmake-3.23/Modules/Compiler/GNU-C.cmake C$:/Program$ Files/JetBrains/CLion$ 2022.2.3/bin/cmake/win/share/cmake-3.23/Modules/Compiler/GNU-CXX.cmake C$:/Program$ Files/JetBrains/CLion$ 2022.2.3/bin/cmake/win/share/cmake-3.23/Modules/Compiler/GNU.cmake C$:/Program$ Files/JetBrains/CLion$ 2022.2.3/bin/cmake/win/share/cmake-3.23/Modules/Platform/Windows-GNU-C-ABI.cmake C$:/Program$ Files/JetBrains/CLion$ 2022.2.3/bin/cmake/win/share/cmake-3.23/Modules/Platform/Windows-GNU-C.cmake C$:/Program$ Files/JetBrains/CLion$ 2022.2.3/bin/cmake/win/share/cmake-3.23/Modules/Platform/Windows-GNU-CXX-ABI.cmake C$:/Program$ Files/JetBrains/CLion$ 2022.2.3/bin/cmake/win/share/cmake-3.23/Modules/Platform/Windows-GNU-CXX.cmake C$:/Program$ Files/JetBrains/CLion$ 2022.2.3/bin/cmake/win/share/cmake-3.23/Modules/Platform/Windows-GNU.cmake C$:/Program$ Files/JetBrains/CLion$ 2022.2.3/bin/cmake/win/share/cmake-3.23/Modules/Platform/Windows-windres.cmake C$:/Program$ Files/JetBrains/CLion$ 2022.2.3/bin/cmake/win/share/cmake-3.23/Modules/Platform/Windows.cmake C$:/Program$ Files/JetBrains/CLion$ 2022.2.3/bin/cmake/win/share/cmake-3.23/Modules/Platform/WindowsPaths.cmake CMakeCache.txt CMakeFiles/3.23.2/CMakeCCompiler.cmake CMakeFiles/3.23.2/CMakeCXXCompiler.cmake CMakeFiles/3.23.2/CMakeRCCompiler.cmake CMakeFiles/3.23.2/CMakeSystem.cmake: phony
+build ../CMakeLists.txt C$:/Program$ Files/JetBrains/CLion$ 2022.2.4/bin/cmake/win/share/cmake-3.23/Modules/CMakeCInformation.cmake C$:/Program$ Files/JetBrains/CLion$ 2022.2.4/bin/cmake/win/share/cmake-3.23/Modules/CMakeCXXInformation.cmake C$:/Program$ Files/JetBrains/CLion$ 2022.2.4/bin/cmake/win/share/cmake-3.23/Modules/CMakeCommonLanguageInclude.cmake C$:/Program$ Files/JetBrains/CLion$ 2022.2.4/bin/cmake/win/share/cmake-3.23/Modules/CMakeGenericSystem.cmake C$:/Program$ Files/JetBrains/CLion$ 2022.2.4/bin/cmake/win/share/cmake-3.23/Modules/CMakeInitializeConfigs.cmake C$:/Program$ Files/JetBrains/CLion$ 2022.2.4/bin/cmake/win/share/cmake-3.23/Modules/CMakeLanguageInformation.cmake C$:/Program$ Files/JetBrains/CLion$ 2022.2.4/bin/cmake/win/share/cmake-3.23/Modules/CMakeRCInformation.cmake C$:/Program$ Files/JetBrains/CLion$ 2022.2.4/bin/cmake/win/share/cmake-3.23/Modules/CMakeSystemSpecificInformation.cmake C$:/Program$ Files/JetBrains/CLion$ 2022.2.4/bin/cmake/win/share/cmake-3.23/Modules/CMakeSystemSpecificInitialize.cmake C$:/Program$ Files/JetBrains/CLion$ 2022.2.4/bin/cmake/win/share/cmake-3.23/Modules/Compiler/CMakeCommonCompilerMacros.cmake C$:/Program$ Files/JetBrains/CLion$ 2022.2.4/bin/cmake/win/share/cmake-3.23/Modules/Compiler/GNU-C.cmake C$:/Program$ Files/JetBrains/CLion$ 2022.2.4/bin/cmake/win/share/cmake-3.23/Modules/Compiler/GNU-CXX.cmake C$:/Program$ Files/JetBrains/CLion$ 2022.2.4/bin/cmake/win/share/cmake-3.23/Modules/Compiler/GNU.cmake C$:/Program$ Files/JetBrains/CLion$ 2022.2.4/bin/cmake/win/share/cmake-3.23/Modules/Platform/Windows-GNU-C-ABI.cmake C$:/Program$ Files/JetBrains/CLion$ 2022.2.4/bin/cmake/win/share/cmake-3.23/Modules/Platform/Windows-GNU-C.cmake C$:/Program$ Files/JetBrains/CLion$ 2022.2.4/bin/cmake/win/share/cmake-3.23/Modules/Platform/Windows-GNU-CXX-ABI.cmake C$:/Program$ Files/JetBrains/CLion$ 2022.2.4/bin/cmake/win/share/cmake-3.23/Modules/Platform/Windows-GNU-CXX.cmake C$:/Program$ Files/JetBrains/CLion$ 2022.2.4/bin/cmake/win/share/cmake-3.23/Modules/Platform/Windows-GNU.cmake C$:/Program$ Files/JetBrains/CLion$ 2022.2.4/bin/cmake/win/share/cmake-3.23/Modules/Platform/Windows-windres.cmake C$:/Program$ Files/JetBrains/CLion$ 2022.2.4/bin/cmake/win/share/cmake-3.23/Modules/Platform/Windows.cmake C$:/Program$ Files/JetBrains/CLion$ 2022.2.4/bin/cmake/win/share/cmake-3.23/Modules/Platform/WindowsPaths.cmake CMakeCache.txt CMakeFiles/3.23.2/CMakeCCompiler.cmake CMakeFiles/3.23.2/CMakeCXXCompiler.cmake CMakeFiles/3.23.2/CMakeRCCompiler.cmake CMakeFiles/3.23.2/CMakeSystem.cmake: phony
 
 
 #############################################
