@@ -23,6 +23,7 @@ public:
 	bool setNewLength(int newLength);
 	CTable* clone();
     std::string getDebugInfo();
+    void operator=(const CTable &other);
 private:
 	std::string name;
 	int* array;

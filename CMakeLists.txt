@@ -15,4 +15,4 @@ add_executable(List1Implementation
         CTable.h
         Global.h
         Source.cpp UserInterface.cpp UserInterface.h
-        Array3DimUtils.cpp Array3DimUtils.h)
+        Array3DimUtils.cpp Array3DimUtils.h Array4DimUtils.cpp Array4DimUtils.h)

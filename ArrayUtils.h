@@ -7,6 +7,9 @@
 
 #include <iostream>
 
+// allocator do macierzy intow ktory ma 4 wymiary, to nie moze byc w alokatorze
+// ampersand
+
 class ArrayUtils {
 public:
     static void fillArray(int* array, int size, int fillValue);

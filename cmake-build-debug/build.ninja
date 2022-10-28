@@ -91,6 +91,13 @@ build CMakeFiles/List1Implementation.dir/Array3DimUtils.cpp.obj: CXX_COMPILER__L
   OBJECT_DIR = CMakeFiles\List1Implementation.dir
   OBJECT_FILE_DIR = CMakeFiles\List1Implementation.dir
 
+build CMakeFiles/List1Implementation.dir/Array4DimUtils.cpp.obj: CXX_COMPILER__List1Implementation_Debug C$:/Users/julia/CLionProjects/List1Implementation/Array4DimUtils.cpp || cmake_object_order_depends_target_List1Implementation
+  DEP_FILE = CMakeFiles\List1Implementation.dir\Array4DimUtils.cpp.obj.d
+  FLAGS = -g -std=gnu++14
+  INCLUDES = -IC:/Users/julia/CLionProjects/List1Implementation/.
+  OBJECT_DIR = CMakeFiles\List1Implementation.dir
+  OBJECT_FILE_DIR = CMakeFiles\List1Implementation.dir
+
 
 # =============================================================================
 # Link build statements for EXECUTABLE target List1Implementation
@@ -99,7 +106,7 @@ build CMakeFiles/List1Implementation.dir/Array3DimUtils.cpp.obj: CXX_COMPILER__L
 #############################################
 # Link the executable List1Implementation.exe
 
-build List1Implementation.exe: CXX_EXECUTABLE_LINKER__List1Implementation_Debug CMakeFiles/List1Implementation.dir/Array2DimUtils.cpp.obj CMakeFiles/List1Implementation.dir/ArrayUtils.cpp.obj CMakeFiles/List1Implementation.dir/CTable.cpp.obj CMakeFiles/List1Implementation.dir/Source.cpp.obj CMakeFiles/List1Implementation.dir/UserInterface.cpp.obj CMakeFiles/List1Implementation.dir/Array3DimUtils.cpp.obj
+build List1Implementation.exe: CXX_EXECUTABLE_LINKER__List1Implementation_Debug CMakeFiles/List1Implementation.dir/Array2DimUtils.cpp.obj CMakeFiles/List1Implementation.dir/ArrayUtils.cpp.obj CMakeFiles/List1Implementation.dir/CTable.cpp.obj CMakeFiles/List1Implementation.dir/Source.cpp.obj CMakeFiles/List1Implementation.dir/UserInterface.cpp.obj CMakeFiles/List1Implementation.dir/Array3DimUtils.cpp.obj CMakeFiles/List1Implementation.dir/Array4DimUtils.cpp.obj
   FLAGS = -g
   LINK_LIBRARIES = -lkernel32 -luser32 -lgdi32 -lwinspool -lshell32 -lole32 -loleaut32 -luuid -lcomdlg32 -ladvapi32
   OBJECT_DIR = CMakeFiles\List1Implementation.dir

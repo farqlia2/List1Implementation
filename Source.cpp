@@ -6,10 +6,7 @@
 #include "ArrayUtils.h"
 #include "Array2DimUtils.h"
 #include "Global.h"
-
-/*
-If (DEBUG) => jakies cout i dalej
-*/
+#include "Array4DimUtils.h"
 
 void modCTable(CTable table, int newLength);
 
@@ -25,6 +22,9 @@ int main() {
     if (Array2DimUtils::allocate2DimArray(&pointer2DArray, ROWS, COLS)){
         Array2DimUtils::deallocate2DimArray(pointer2DArray, ROWS, COLS);
     }
+
+    int**** pointer4DArray;
+    Array4DimUtils::allocate4DimArray(X_SIZE, Y_SIZE, Z_SIZE, Q_SIZE, &pointer4DArray);
 
 
     if (DEBUG) std::cout << "pointer2DArray = " << pointer2DArray << "\n";
@@ -54,6 +54,8 @@ int main() {
         std::cout << cloneCTable->getDebugInfo();
     }
     if (DEBUG) std::cout << "\n";
+
+    delete cloneCTable;
 
     modCTable(nonParamCTable, NEW_CTABLE_LENGTH);
     modCTable(&nonParamCTable, NEW_CTABLE_LENGTH);
